@@ -34,7 +34,7 @@ function transformStateWithClones(state, actions) {
       default:
         break;
     }
-    result.push(currentState);
+    result.push({ ...currentState });
   }
 
   return result;
